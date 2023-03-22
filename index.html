@@ -1,0 +1,24 @@
+<html>
+<body><h1>OUTPUT CONSOLE:</h1><script>
+let p=[10],w,temp,s,l=0;
+for(let i=0;i<10;i++){
+w=Number(prompt("Enter the id of"+" "+(i+1)+" "+"participants"));
+p[i]=w;}
+s=Number(prompt("Enter the id of the winner:"));
+if(s==p[0]){
+document.write("winner is already in first position");
+}
+else{
+for(let j=0;j<10;j++){
+if(p[j]==s){
+temp=p[j];
+p.splice(j,1);
+p.splice(0,0,temp);
+l++;
+break;}}
+if(l==1){
+document.write("Found the winner in the participants");
+document.write("<br>");
+document.write("[",p,"]");}
+else{document.write("Error!!!  Winner not found");}
+}</script></body></html>
