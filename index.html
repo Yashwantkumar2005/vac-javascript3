@@ -6,7 +6,8 @@ w=Number(prompt("Enter the id of"+" "+(i+1)+" "+"participants"));
 p[i]=w;}
 s=Number(prompt("Enter the id of the winner:"));
 if(s==p[0]){
-document.write("winner is already in first position");
+document.write("Winner is already in first position");
+document.write("<br>");
 document.write("<br>");
 document.write("[",p,"]");
 }
@@ -20,6 +21,7 @@ l++;
 break;}}
 if(l==1){
 document.write("Found the winner in the participants");
+document.write("<br>");
 document.write("<br>");
 document.write("[",p,"]");}
 else{document.write("Error!!!  Winner not found");}
